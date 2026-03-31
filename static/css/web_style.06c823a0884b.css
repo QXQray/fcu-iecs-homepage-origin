@@ -813,6 +813,7 @@ footer ul.social-icons {
     transform: scale(1.1);
 }
 
+.section-index-index .card-body h3,
 .section-index-index .card-body h4 {
     font-size: 20px;
 }
@@ -846,6 +847,51 @@ footer ul.social-icons {
 
 .section-history-history .text-color-dark {
     color: #212529;
+}
+
+/* Accessibility: increase color contrast for Lighthouse-reported elements */
+.section-index-index .honor-card .card-body p,
+.section-index-index .honor-card .card-text,
+.section-index-index .section-event .card-body .card-text {
+    color: #8f2f26;
+}
+
+.section-index-index .custom-btn-style {
+    background-color: #005bb5;
+    border-color: #005bb5 #005bb5 #004a93;
+    color: #ffffff;
+}
+
+.section-index-index .custom-btn-style:hover,
+.section-index-index .custom-btn-style:focus,
+.section-index-index .custom-btn-style:active {
+    background-color: #004a93;
+    border-color: #004a93 #004a93 #003a74;
+    color: #ffffff;
+}
+
+.section-index-index .post-event-date {
+    background-color: #005bb5;
+    color: #ffffff;
+}
+
+.section-index-index .post-event-date .month,
+.section-index-index .post-event-date .day,
+.section-index-index .post-event-date .year {
+    color: #ffffff;
+}
+
+footer,
+footer p,
+footer p.mb-0,
+footer .pr-5,
+footer a {
+    color: #e8eef2;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ffffff;
 }
 
 .section-history-history .font-weight-normal {
